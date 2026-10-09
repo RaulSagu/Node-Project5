@@ -1,0 +1,33 @@
+{
+  "name": "node-project5",
+  "version": "1.0.0",
+  "description": "Aplicación de Node.js con Express y Zod para validar datos de entrada en una API RESTful. Todo esto se hace desde una conexión a una base de datos Mysql. La aplicación permite realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) en una tabla de la base de datos, y utiliza Zod para validar los datos de entrada antes de procesarlos. Además, se implementa CORS para permitir solicitudes desde diferentes dominios.",
+  "main": "app.js",
+  "scripts": {
+    "start:mysql": "node --watch server-with-mysql.js",
+    "start:local": "node --watch server-with-cnx-local.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaulSagu/Node-Project5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/RaulSagu/Node-Project5/issues"
+  },
+  "homepage": "https://github.com/RaulSagu/Node-Project5#readme",
+  "devDependencies": {
+    "mysql2": "^3.24.5",
+    "standard": "^17.1.2"
+  },
+  "dependencies": {
+    "cors": "2.8.6",
+    "dotenv": "18.0.5",
+    "express": "5.2.1",
+    "zod": "4.6.5"
+  }
+}

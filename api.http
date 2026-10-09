@@ -1,0 +1,35 @@
+### Recuperar Todas las peliculas
+GET http://localhost:3000/movies
+
+#### Recuperar una pelicula por ID
+GET http://localhost:3000/movies/9f04ee95-c0ce-11f1-a51c-fa163ebf0d73
+
+### Recuperar pelicula por genero
+GET http://localhost:3000/movies?genre=DRAMA
+
+### Insertar una nueva pelicula
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "Crepusculo - Amanecer Parte 1 (2011)",
+  "year": 2011,
+  "director": "Bill Condon",
+  "description": "Película de Romance dirigida por Bill Condon.",
+  "duration": 117,
+  "rate": 5.2,
+  "recaudation": 280000000,
+  "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZbHKkRzCbLoqxKT5ss4x2gnM3MF-4iCfJWUYcFkcP5Q&s=10"
+}
+
+#### Eliminar una pelicula existente
+DELETE http://localhost:3000/movies/14
+
+#### Actualizar una pelicula existente
+PATCH  http://localhost:3000/movies/13
+Content-Type: application/json
+
+{
+  "title": "Matrix Revolutions II (2003)",
+  "recaudation": 1378420000
+}
